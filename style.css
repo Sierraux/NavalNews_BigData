@@ -1,0 +1,18 @@
+/* style.css */
+.main {
+    background-color: #f8f9fa;
+}
+h1, h2, h3 {
+    color: #0b3b60;
+    font-family: 'Arial', sans-serif;
+}
+.stMetric {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+.sidebar .sidebar-content {
+    background-color: #0b3b60;
+    color: white;
+}
