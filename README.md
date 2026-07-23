@@ -1,17 +1,42 @@
 # Naval News Analytics Dashboard 📊🚢
 
-Dashboard interaktif untuk menganalisis dan memprediksi panjang artikel (jumlah kata) berdasarkan struktur konten pada website berita pertahanan Naval News. Proyek ini merupakan Final Project Big Data & Predictive Analytics.
+A modern and interactive dashboard for analyzing and predicting article length based on the structural characteristics of Naval News articles. This project was developed as a Final Project for Big Data & Predictive Analytics.
 
-## Fitur Utama
-* **Data Summary:** Ringkasan metrik dari artikel yang dikumpulkan.
-* **Dataset:** Eksplorasi data mentah dengan fitur pencarian dan unduh CSV.
-* **Visualization:** Visualisasi data (Histogram, Scatter Plot, Heatmap, dll).
-* **Prediction:** Prediksi panjang kata (Word Count) menggunakan model Multiple Linear Regression.
+## Project Overview
+This dashboard combines data analysis, visualization, and predictive modeling in one simple interface. It helps users explore how features such as the number of images, paragraphs, external links, and title length relate to the total word count of an article.
 
-## Cara Menjalankan Secara Lokal
-1. Pastikan Python sudah terinstal.
-2. Buka terminal/command prompt.
-3. Instal library yang dibutuhkan: `pip install -r requirements.txt`
-4. Jalankan aplikasi: `streamlit run app.py`
+## Key Features
+- **Data Summary:** View essential statistics from the collected article dataset.
+- **Interactive Dataset Explorer:** Browse articles, search by title, and download the filtered dataset as CSV.
+- **Data Visualization:** Explore insights through histograms, scatter plots, and correlation heatmaps.
+- **Prediction Module:** Estimate article word count using a Multiple Linear Regression model.
 
-**Author:** Daffa Mashabi Akmal Syarif
+## Technologies Used
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Pickle for model loading
+
+## How to Run Locally
+1. Make sure Python is installed on your system.
+2. Open your terminal or command prompt.
+3. Install the required libraries:
+   `pip install -r requirements.txt`
+4. Run the application:
+   `streamlit run app.py`
+
+## Project Structure
+- `app.py` — Main Streamlit dashboard application
+- `naval_news_cleaned.csv` — Cleaned dataset used by the app
+- `style.css` — Custom styling for the dashboard
+- `requirements.txt` — Python dependencies
+
+## Author
+**Daffa Mashabi Akmal Syarif**  
+**Student ID:** 24.61.0282
+
+---
+This project is designed to showcase a complete data analytics workflow, from data cleaning and exploration to visualization and predictive modeling.
