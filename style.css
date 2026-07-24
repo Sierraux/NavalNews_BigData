@@ -1,18 +1,117 @@
 /* style.css */
+/* Naval News Analytics Dashboard, custom styling */
+
+/* ---------- General page background ---------- */
 .main {
     background-color: #f8f9fa;
 }
+
+/* ---------- Headings ---------- */
 h1, h2, h3 {
     color: #0b3b60;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
-.stMetric {
+
+h1 {
+    font-weight: 700;
+}
+
+/* ---------- Metric cards (st.metric) ---------- */
+/* Modern Streamlit exposes this via data-testid, which is more reliable
+   across versions than relying on the .stMetric class name alone. */
+div[data-testid="stMetric"] {
     background-color: #ffffff;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
 }
-.sidebar .sidebar-content {
+
+div[data-testid="stMetricLabel"] {
+    color: #0b3b60;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #12578f;
+}
+
+/* ---------- Sidebar ---------- */
+/* .sidebar .sidebar-content is a legacy selector from older Streamlit
+   versions and no longer applies to current releases. The sidebar
+   container is now reachable through its data-testid instead. */
+section[data-testid="stSidebar"] {
     background-color: #0b3b60;
-    color: white;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] .stRadio label,
+section[data-testid="stSidebar"] .stRadio div {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Sidebar buttons (e.g. the "Refresh cached data" button) */
+section[data-testid="stSidebar"] button {
+    background-color: #12578f;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+}
+
+section[data-testid="stSidebar"] button:hover {
+    background-color: #1a6ba8;
+    border-color: #ffffff;
+}
+
+/* ---------- Main area buttons (e.g. "Predict Estimated Word Count") ---------- */
+.stButton > button {
+    background-color: #0b3b60;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.stButton > button:hover {
+    background-color: #12578f;
+    color: #ffffff;
+}
+
+/* ---------- Tabs (Visualization page now has 12 tabs) ---------- */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+    color: #0b3b60;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #12578f;
+    border-bottom: 3px solid #12578f;
+}
+
+/* ---------- DataFrame / table container ---------- */
+div[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Text inputs and number inputs on the Prediction page ---------- */
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+/* ---------- Success / warning / error banners ---------- */
+div[data-testid="stAlert"] {
+    border-radius: 8px;
 }

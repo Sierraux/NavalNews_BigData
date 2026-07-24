@@ -17,18 +17,19 @@ An interactive analytics dashboard that explores and predicts the length of nava
 
 1. [Project Overview](#-project-overview)
 2. [Key Features](#-key-features)
-3. [Dataset and Methodology](#-dataset-and-methodology)
-4. [Feature Engineering](#-feature-engineering)
-5. [Modeling Approach](#-modeling-approach)
-6. [Model Performance](#-model-performance)
-7. [Technologies Used](#-technologies-used)
-8. [Project Structure](#-project-structure)
-9. [How to Run Locally](#-how-to-run-locally)
-10. [Deployment Notes](#-deployment-notes)
-11. [Known Limitations](#-known-limitations)
-12. [Future Improvements](#-future-improvements)
-13. [Author](#-author)
-14. [Acknowledgments](#-acknowledgments)
+3. [Screenshots](#-screenshots)
+4. [Dataset and Methodology](#-dataset-and-methodology)
+5. [Feature Engineering](#-feature-engineering)
+6. [Modeling Approach](#-modeling-approach)
+7. [Model Performance](#-model-performance)
+8. [Technologies Used](#-technologies-used)
+9. [Project Structure](#-project-structure)
+10. [How to Run Locally](#-how-to-run-locally)
+11. [Deployment Notes](#-deployment-notes)
+12. [Known Limitations](#-known-limitations)
+13. [Future Improvements](#-future-improvements)
+14. [Author](#-author)
+15. [Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -54,9 +55,17 @@ Web Scraping -> Data Cleaning -> Exploratory Data Analysis -> Correlation Analys
 |---|---|
 | 🏠 **Home** | An at a glance summary of the dataset: total articles, total unique authors, average word count, average paragraph count, and content diversity metrics such as the average number of countries mentioned per article. |
 | 🗂️ **Dataset** | A fully interactive, searchable table of the cleaned dataset. Search articles by title and download the filtered result as a CSV file with a single click. |
-| 📈 **Visualization** | Five visualization tabs covering the word count distribution, a scatter plot of paragraphs versus word count, a full correlation heatmap across all structural and content features, the top 10 most active authors, and the top 10 most frequently mentioned countries or navies. |
+| 📈 **Visualization** | Twelve visualization tabs: word count distribution, a full correlation heatmap, a correlation ranking chart, an interactive scatter plot with a selectable feature axis, a monthly word count trend line, ship type analysis boxplots, publication timing boxplots, a content mentions bar chart, top 10 authors, top 10 mentioned countries, a feature distribution grid, and a live actual vs predicted / residual plot from the trained model. |
 | 🤖 **Prediction** | A guided form with 20 structural and content inputs (with sensible defaults) that feeds a trained Multiple Linear Regression model and returns an estimated word count instantly. |
 | 🔄 **Cache Refresh** | A one click "Refresh cached data" button in the sidebar, useful whenever the underlying dataset or model file is updated after deployment. |
+
+## 📸 Screenshots
+
+> Add screenshots of the Home, Visualization, and Prediction pages here once the dashboard is finalized, for example:
+>
+> `![Home Page](screenshots/home.png)`
+>
+> `![Prediction Page](screenshots/prediction.png)`
 
 ## 🔬 Dataset and Methodology
 
