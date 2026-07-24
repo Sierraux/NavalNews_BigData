@@ -59,14 +59,6 @@ Web Scraping -> Data Cleaning -> Exploratory Data Analysis -> Correlation Analys
 | 🤖 **Prediction** | A guided form with 20 structural and content inputs (with sensible defaults) that feeds a trained Multiple Linear Regression model and returns an estimated word count instantly. |
 | 🔄 **Cache Refresh** | A one click "Refresh cached data" button in the sidebar, useful whenever the underlying dataset or model file is updated after deployment. |
 
-## 📸 Screenshots
-
-> Add screenshots of the Home, Visualization, and Prediction pages here once the dashboard is finalized, for example:
->
-> `![Home Page](screenshots/home.png)`
->
-> `![Prediction Page](screenshots/prediction.png)`
-
 ## 🔬 Dataset and Methodology
 
 **Data source:** public article pages under the Naval News category `naval-news`, collected across roughly 140 category pages.
